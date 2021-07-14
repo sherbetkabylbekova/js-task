@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: 'Crimson Text', serif;
+}
+
+img {
+  height: auto;
+  object-fit: contain;
+  max-width: 100%;
+}
+
+ul li{
+  display: inline-block;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+}
+
+.col-6 {
+  width: 50%;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.header {
+  padding: 45px 0 15px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+
+  &__navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__menu {
+    display: flex;
+
+
+  }
+  &__menu-item{
+    font-size: 25px;
+    font-weight: 700;
+    transition: .6s;
+    :hover{
+      color: #933ab6;
+    }
+  }
+  &__menu-item:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+.hero{
+  padding: 150px 0 150px;
+  height: 100vh;
+  background: url("../image/4.jpg") no-repeat center/cover;
+  &__desc{
+    font-size: 26px;
+    line-height: 35px;
+    position: ;
+  }
+  &__info{
+    font-size: 26px;
+    line-height: 35px;
+    margin: 25px 0;
+
+  }
+  &__title{
+    font-size: 55px;
+  }
+}
+.portfolio{
+  padding: 45px 0 55px;
+  height: 100vh;
+  background: url("../image/watercolour-texture-background-vector.jpg");
+  &__info-title{
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 42px;
+    text-align: center;
+    color: #000000;
+  }
+  &__info-desc{
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+  }
+}
